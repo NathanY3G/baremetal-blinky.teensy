@@ -39,7 +39,7 @@ $(BUILD_DIR)/%.c.o: %.c
 
 .PHONY: flash
 flash: $(BUILD_DIR)/$(OUTFILE).hex
-	$(LOADER) --mcu=TEENSY40 -w -v $<
+	$(LOADER) --mcu=TEENSY41 -w -v $<
 
 .PHONY: clean
 clean:
